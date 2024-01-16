@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-replace-lib": "ng build defer-test && rm -rf node_modules/defer-test && mv dist/defer-test node_modules"
   },
   "private": true,
   "dependencies": {
